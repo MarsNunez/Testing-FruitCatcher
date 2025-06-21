@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cfr5pk1w5vrds"]
 
-[ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_a46mq"]
+[ext_resource type="Script" uid="uid://ca45erkkf6cm2" path="res://scripts/pause_menu.gd" id="1_a46mq"]
 
 [node name="PauseMenu" type="CanvasLayer"]
 script = ExtResource("1_a46mq")
@@ -26,13 +26,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -100.0
-offset_top = -124.0
-offset_right = 100.0
-offset_bottom = -61.0
+offset_top = -56.0
+offset_right = 101.0
+offset_bottom = 7.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-text = "Resume"
+text = "Continuar"
 
 [node name="ExitButton" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 0)
@@ -48,7 +48,22 @@ offset_bottom = -235.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 40
-text = "Exit"
+text = "Salir"
+
+[node name="FinalScoreLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -134.0
+offset_right = 63.0
+offset_bottom = -84.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "PAUSA"
 
 [connection signal="pressed" from="ResumeButton" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

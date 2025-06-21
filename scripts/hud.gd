@@ -13,3 +13,5 @@ func update_health(new_health):
 func _on_start_button_pressed():
 	$StartButton.hide()
 	start_game.emit()
+	$HealthLabel/VIDITA.hide()
+	

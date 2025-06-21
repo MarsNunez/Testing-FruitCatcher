@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cg7axtoqfulsl"]
 
-[ext_resource type="Script" path="res://scripts/hud.gd" id="1_vwgbt"]
+[ext_resource type="Script" uid="uid://cu5u2pyt62jfd" path="res://scripts/hud.gd" id="1_vwgbt"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_vwgbt")
@@ -30,7 +30,7 @@ offset_left = 50.0
 offset_right = 250.0
 offset_bottom = 70.0
 theme_override_font_sizes/font_size = 40
-text = "Score: 0"
+text = "Puntaje: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -47,7 +47,7 @@ offset_bottom = 31.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-text = "Start Game"
+text = "Iniciar"
 
 [node name="HealthLabel" type="Label" parent="."]
 anchors_preset = 1
@@ -58,7 +58,23 @@ offset_right = -252.0
 offset_bottom = 70.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 40
-text = "Health: "
+text = "Vida: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VIDITA" type="Label" parent="HealthLabel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -653.0
+offset_top = 393.0
+offset_right = 5.0
+offset_bottom = 506.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 40
+text = "Atrapa tantas frutas como puedas
+ moviendote con el mouse"
 horizontal_alignment = 1
 vertical_alignment = 1
 
