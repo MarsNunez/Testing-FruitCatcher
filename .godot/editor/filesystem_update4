@@ -1,7 +1,10 @@
-res://scenes/game_over_menu.tscn
 res://scenes/main.tscn
+res://test/test_basket.gd
 res://scenes/basket.tscn
 res://scenes/fruit.tscn
 res://scenes/hud.tscn
+res://scenes/game_over_menu.tscn
 res://scenes/pause_menu.tscn
-res://scripts/hud.gd
+res://test/test_fruit.gd
+res://test/test_main.gd
+res://test/test_archivos_faltantes.gd

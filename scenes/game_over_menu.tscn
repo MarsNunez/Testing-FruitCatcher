@@ -13,6 +13,7 @@ offset_bottom = 464.0
 color = Color(0, 0, 0, 1)
 
 [node name="PanelBorder" type="ColorRect" parent="PanelBorder"]
+layout_mode = 0
 offset_left = 14.0
 offset_top = -72.0
 offset_right = 465.0
@@ -27,6 +28,7 @@ offset_bottom = 455.0
 color = Color(0.427451, 0.0117647, 0.270588, 1)
 
 [node name="PausePanel" type="ColorRect" parent="PausePanel"]
+layout_mode = 0
 offset_left = 14.0
 offset_top = -74.0
 offset_right = 466.0
